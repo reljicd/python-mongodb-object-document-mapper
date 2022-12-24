@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  mongo_odm:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_HOST=mongo
+      - MONGO_PORT=27017
+    container_name: mongo_odm
+    entrypoint: ["./scripts/wait_for_it.sh", "postgres:5432", "--", "python"]
+
+  mongo:
+    image: mongo:3.6.0
+    container_name: mongo
+
+
+networks:
+  default:
+    driver: bridge
