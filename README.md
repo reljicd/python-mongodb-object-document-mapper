@@ -36,7 +36,7 @@ Add project directory to PYTHONPATH
 $> export PYTHONPATH=$PYTHONPATH:$(pwd)
 ```
 
-This project also depends on [dict-objectify](https://github.com/reljicd/dict-objectify) project. You will need to clone these projects as well, and add them to your PYTHONPATH. (In PyCharm, you can configure additional project dependencies in: Preferences... > Project:python-mongodb-object-document-mapper > Project Structure > Add Content Root)
+This project also depends on [dict-objectify](https://github.com/reljicd/dict-objectify) and [python-snippets-lib](https://github.com/reljicd/python-snippets-lib) projects. You will need to clone these projects as well, and add them to your PYTHONPATH. (In PyCharm, you can configure additional project dependencies in: Preferences... > Project:python-mongodb-object-document-mapper > Project Structure > Add Content Root)
 
 ## Configuration parameters
 
