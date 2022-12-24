@@ -56,6 +56,8 @@ Configuration parameters are passed through environment variables.
 
 * **MONGO_USE_REPLICA_SET** - Should replica set be used. Defaults to **False**.
 
+* **DB_CONFIGS** - Path of the databases configuration files in yaml format. Defaults to **mongo_odm/config/db_configs**.
+
 ## How to run
 
 ### Default
