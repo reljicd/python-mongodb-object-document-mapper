@@ -1,0 +1,16 @@
+model: tests.fixtures.models.researcher.Researcher
+collections:
+  - name: researchers
+    unique_identifiers: true
+    indices:
+      - fields:
+          - name: first_name
+          - name: last_name
+      - fields:
+          - name: full_name
+      - fields:
+          - name: _metadata.sources_hash
+      - fields:
+          - name: _metadata.normalized_names
+      - fields:
+          - name: _hash

@@ -1,0 +1,11 @@
+model: tests.fixtures.models.organisation.Organisation
+collections:
+  - name: organisations
+    unique_identifiers: true
+    indices:
+      - fields:
+          - name: normalized_names
+      - fields:
+          - name: _metadata.sources_hash
+      - fields:
+          - name: _hash
