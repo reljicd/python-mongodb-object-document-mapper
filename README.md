@@ -36,8 +36,6 @@ Add project directory to PYTHONPATH
 $> export PYTHONPATH=$PYTHONPATH:$(pwd)
 ```
 
-This project also depends on [dict-objectify](https://github.com/reljicd/dict-objectify) and [python-snippets-lib](https://github.com/reljicd/python-snippets-lib) projects. You will need to clone these projects as well, and add them to your PYTHONPATH. (In PyCharm, you can configure additional project dependencies in: Preferences... > Project:python-mongodb-object-document-mapper > Project Structure > Add Content Root)
-
 ## Configuration parameters
 
 Configuration parameters are passed through environment variables.
@@ -56,7 +54,7 @@ Configuration parameters are passed through environment variables.
 
 * **MONGO_USE_REPLICA_SET** - Should replica set be used. Defaults to **False**.
 
-* **DB_CONFIGS** - Path of the databases configuration files in yaml format. Defaults to **mongo_odm/config/db_configs**.
+* **DB_CONFIGS** - Path of the databases configuration files in yaml format. Defaults to empty string.
 
 ## How to run
 
@@ -179,3 +177,8 @@ It is possible to run all the above with helper script:
 $> chmod +x scripts/run_docker.sh
 $> scripts/run_tests_using_docker_compose.sh
 ```
+
+## License
+
+Licensed under the
+[Apache 2.0](https://github.com/google/python-fire/blob/master/LICENSE) License.
