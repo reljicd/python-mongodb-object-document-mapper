@@ -1,6 +1,6 @@
 import pytest
 
-from fixtures.models.commons import Identifier, Source
+from fixtures.models.commons import Identifier
 from fixtures.models.researcher import Researcher
 from mongo_odm.repos.repo import MongoRepo
 from mongo_odm.repos.repos import MongoRepos
@@ -24,8 +24,7 @@ def reset_mongo(researchers_repo: MongoRepo) -> None:
             Researcher(
                 _id=str(i),
                 first_name=f'Name_{i}',
-                identifiers=[Identifier(name='test', value=str(i))],
-                sources=[Source(name='test', value=str(i))]
+                identifiers=[Identifier(name='test', value=str(i))]
             )
         )
 

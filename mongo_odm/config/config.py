@@ -4,8 +4,8 @@ from typing import Dict, List, NamedTuple, Type
 
 import pymongo
 import yaml
+from reljicd_utils.file_system import files_in_dir
 
-from commons.file_system.file_system import files_in_dir
 from mongo_odm.config.env_vars import DB_CONFIGS
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))

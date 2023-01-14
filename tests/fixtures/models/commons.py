@@ -1,11 +1,5 @@
-from dict_objectify.base.base import Base, MixinBase
-from dict_objectify.fields.array import Array
-from dict_objectify.fields.bool import Bool
-from dict_objectify.fields.date import Datetime
-from dict_objectify.fields.enum import EnumField
-from dict_objectify.fields.float import Float
-from dict_objectify.fields.integer import Integer
-from dict_objectify.fields.text import Text
+from dict_objectify import (Array, Base, Bool, Datetime, EnumField, Float,
+                            Integer, MixinBase, Text)
 
 
 class Identifier(Base):

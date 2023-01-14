@@ -4,15 +4,14 @@ from multiprocessing import Process, Queue
 from typing import (Dict, Generator, Iterator, List, NamedTuple, Optional,
                     Tuple, Type, TypeVar, Union)
 
+from dict_objectify import Base
 from pymongo import UpdateOne
 from pymongo.errors import DuplicateKeyError
 from pymongo.operations import InsertOne
 from pymongo.results import BulkWriteResult, DeleteResult
+from reljicd_utils.collections import chunks, iter_counter
+from reljicd_utils.multiprocessing import spawn_scope
 
-from commons.collections.iter_counter import iter_counter
-from commons.collections.iter_tools import chunks
-from commons.multiprocessing.multiprocess import spawn_scope
-from dict_objectify.base.base import Base
 from mongo_odm.config.config import COLLECTIONS
 from mongo_odm.session.session import collection, db
 

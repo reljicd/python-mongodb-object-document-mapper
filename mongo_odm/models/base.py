@@ -1,10 +1,7 @@
 import datetime
 from typing import Dict
 
-from dict_objectify.base.base import Base
-from dict_objectify.base.hash import dict_base_hash
-from dict_objectify.fields.date import Datetime
-from dict_objectify.fields.text import Text
+from dict_objectify import Base, Datetime, Text, dict_base_hash
 
 NON_HASHABLE_FIELDS = ['_id', 'updated_at', 'created_at', '_hash', '_metadata']
 
