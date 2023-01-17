@@ -2,5 +2,4 @@ pymongo>=4.3.3
 pytest>=7.2.1
 str2bool==1.1
 pyyaml>=6.0
-reljicd-utils>=0.0.4
 dict-objectify>=0.0.2

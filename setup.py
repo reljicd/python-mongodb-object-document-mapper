@@ -25,7 +25,6 @@ DEPENDENCIES = [
     'pymongo',
     'str2bool',
     'pyyaml',
-    'reljicd-utils',
     'dict-objectify'
 ]
 

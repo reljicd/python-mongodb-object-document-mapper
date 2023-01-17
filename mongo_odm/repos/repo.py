@@ -9,11 +9,10 @@ from pymongo import UpdateOne
 from pymongo.errors import DuplicateKeyError
 from pymongo.operations import InsertOne
 from pymongo.results import BulkWriteResult, DeleteResult
-from reljicd_utils.collections import chunks, iter_counter
-from reljicd_utils.multiprocessing import spawn_scope
 
 from mongo_odm.config.config import COLLECTIONS
 from mongo_odm.session.session import collection, db
+from mongo_odm.utils.utils import chunks, iter_counter, spawn_scope
 
 BaseType = TypeVar('BaseType', bound=Base)
 
